@@ -80,7 +80,7 @@ This uses all the functions used in seq2seq, adding to it we have a class namely
   
   This class uses Bahdanau attention and implements it.
 
-# Best_model_attention.ipynb
+# Best_attention_model.ipynb
 
 The best model is built and trained using best hyperparameters and the predictions are made on test data and then test accuracy is computed. 
 
