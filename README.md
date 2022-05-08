@@ -42,25 +42,12 @@ This function gives the accuracy of validation dataset.
 The sweep configuration allows us to run several number of experiments with the hyperparameters.
 The sweep calls the fit function which builds and trains the model. The best model and its hyperparameters could be obtained from the sweep.
 
-# Best_model_seq2seq.ipynb
-
-The best model is built and trained using best hyperparameters and the predictions are made on test data and then test accuracy is computed. 
-
-**Best model performance**
-
-Test accuracy: 41.10 %
-
-The best model obtained was:
-
-![model](https://user-images.githubusercontent.com/99970529/167281833-f72205e8-a4fc-4bcf-a3e4-c4fe09d8b673.png)
-
-
-# Passing hyperparameters as command line arguments in seq2seq model
+**Passing hyperparameters as command line arguments in seq2seq model**
 
 You can pass the following command with the 'dakshina_dataset_v1.0' data folder in the present working directory.
 
 python <filename> <cell_type> <n_encoder_layers> <n_decoder_layers> <embedding_size> <latent_dimension> <dropout> <epochs>
-  
+ 
 * ```cell_type```,     this argument requires the cell to be used by the model. 
 * ```n_encoder_layers```, this argument requires the number of layers to be used by the encoder.
 * ```n_decoder_layers```, this argument requires the number of layers to be used by the decoder.
@@ -70,6 +57,18 @@ python <filename> <cell_type> <n_encoder_layers> <n_decoder_layers> <embedding_s
 * ```epochs```,this argument requires number of epochs to train the model.
   
   Example:```python seq2seq_cmdline.py 'LSTM' 3 3 256 512 0.3 30```
+
+# Best_model_seq2seq.ipynb
+
+The best model is built and trained using best hyperparameters and the predictions are made on test data and then test accuracy is computed. 
+
+**Best model performance**
+
+Test accuracy: 49.16%
+
+The best model obtained was:
+
+![model](https://user-images.githubusercontent.com/99970529/167281833-f72205e8-a4fc-4bcf-a3e4-c4fe09d8b673.png)
 
  
 # Attention.ipynb
@@ -87,7 +86,7 @@ The best model is built and trained using best hyperparameters and the predictio
 
 **Best model performance**
 
-Test accuracy: 41.10 %
+Test accuracy: **55.99%**
   
 The best model obtained was:  
   
