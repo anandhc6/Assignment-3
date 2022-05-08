@@ -17,8 +17,7 @@ To train a Seq2Seq model with Attention for Dakshina Dataset transliteration fro
 
 This notebook trains the model and computes the validation accuracy.
 
-**encoder_input_data,decoder_input_data,decoder_target_data,num_encoder_tokens,num_decoder_tokens,input_token_idx,target_token_idx,encoder_max_length,decoder_max_length = embed_train_data(train_data_lines)
-**
+**encoder_input_data,decoder_input_data,decoder_target_data,num_encoder_tokens,num_decoder_tokens,input_token_idx,target_token_idx,encoder_max_length,decoder_max_length = embed_train_data(train_data_lines)**
 
 This function is used for data embedding of train dataset.
 The same kind of function is used forve validation data.
@@ -62,15 +61,15 @@ You can pass the following command with the 'dakshina_dataset_v1.0' data folder 
 
 python <filename> <cell_type> <n_encoder_layers> <n_decoder_layers> <embedding_size> <latent_dimension> <dropout> <epochs>
   
- cell_type    -  this argument requires the cell to be used by the model. 
- n_encoder_layers - this argument requires the number of layers to be used by the encoder.
- n_decoder_layers - this argument requires the number of layers to be used by the decoder.
- embedding_size - this argument requires the embedding size to train the model according to it..
- latent_dimension - this argument requires the number of filters to be used by the model.
- dropout -  this argument requires dropout to be passed.
- epochs -this argument requires number of epochs to train the model.
+* ```cell_type```,     this argument requires the cell to be used by the model. 
+* ```n_encoder_layers```, this argument requires the number of layers to be used by the encoder.
+* ```n_decoder_layers```, this argument requires the number of layers to be used by the decoder.
+* ```embedding_size```, this argument requires the embedding size to train the model according to it..
+* ```latent_dimension```, this argument requires the number of filters to be used by the model.
+* ```dropout```,  this argument requires dropout to be passed.
+* ```epochs```,this argument requires number of epochs to train the model.
   
-  Example: python seq2seq_cmdline.py 'LSTM' 3 3 256 512 0.3 30
+  Example:```python seq2seq_cmdline.py 'LSTM' 3 3 256 512 0.3 30```
 
  
 # Attention.ipynb
