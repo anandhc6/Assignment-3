@@ -86,7 +86,7 @@ The best model is built and trained using best hyperparameters and the predictio
 
 **Best model performance**
 
-Test accuracy: **55.99%**
+Test accuracy: **53.16%**
   
 The best model obtained was:  
   
