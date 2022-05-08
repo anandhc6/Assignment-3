@@ -5,7 +5,7 @@ The purpose of this assignment is to,
   1. Build and train a RNN based seq2seq model from scratch.
   2. Implement attention based model.
 
-Link for wandb report:
+Link for wandb report: https://wandb.ai/anandh/CS6910_Assignment3_Attention/reports/Assignment-3--VmlldzoxOTYyNzgx
 
 To train a Seq2Seq model for Dakshina Dataset transliteration from English to Tamil, use 
 **seq2seq.ipynb**
