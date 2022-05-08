@@ -55,7 +55,7 @@ The best model obtained was:
 ![model](https://user-images.githubusercontent.com/99970529/167281833-f72205e8-a4fc-4bcf-a3e4-c4fe09d8b673.png)
 
 
-# Passing hyperparameters as command line arguments
+# Passing hyperparameters as command line arguments in seq2seq model
 
 You can pass the following command with the 'dakshina_dataset_v1.0' data folder in the present working directory.
 
@@ -75,10 +75,40 @@ python <filename> <cell_type> <n_encoder_layers> <n_decoder_layers> <embedding_s
 # Attention.ipynb
 
 This file contains code to configure and run wandb sweeps for attention models.
+This uses all the functions used in seq2seq, adding to it we have a class namely, AttentionLayer 
+  
+ **AttentionLayer(name='attention_layer')([encoder_outputs, decoder_outputs])** 
+  
+  This class uses Bahdanau attention and implements it.
 
 # Best_model_attention.ipynb
 
 The best model is built and trained using best hyperparameters and the predictions are made on test data and then test accuracy is computed. 
+
+**Best model performance**
+
+Test accuracy: 41.10 %
+  
+The best model obtained was:  
+  
+![model (1)](https://user-images.githubusercontent.com/99970529/167287182-7d3be43d-c3bc-4f38-aab4-4af552bbccd2.png)
+
+# Passing hyperparameters as command line arguments in seq2seq with Attention.
+
+You can pass the following command with the 'dakshina_dataset_v1.0' data folder in the present working directory.
+
+python <filename> <epochs> <embedding_size> <latent_dimension> <cell_type> <dropout> 
+  
+* ```epochs```,this argument requires number of epochs to train the model.
+* ```embedding_size```, this argument requires the embedding size to train the model according to it..
+* ```latent_dimension```, this argument requires the number of filters to be used by the model.
+* ```cell_type```,     this argument requires the cell to be used by the model. 
+* ```dropout```,  this argument requires dropout to be passed.
+
+  
+  Example:```python Attention_cmdline.py 10 128 256 'LSTM' 0.2```
+  
+  
 
 
 
