@@ -108,7 +108,7 @@ python <filename> <epochs> <embedding_size> <latent_dimension> <cell_type> <drop
   Example:```python Attention_cmdline.py 10 128 256 'LSTM' 0.2```
   
   
-
+Code for Visualisation is in **Best_attention_model.ipynb**
 
 
  
